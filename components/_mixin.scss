@@ -1,0 +1,21 @@
+@mixin foflex{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin navflex{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin navflex-1{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@mixin hero-flex{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
