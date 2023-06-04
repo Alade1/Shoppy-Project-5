@@ -19,3 +19,14 @@
     justify-content: space-between;
     
 }
+@mixin boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin images{
+    display: flex;
+        align-items: center;
+        flex-direction: start;
+        gap: 30px;
+}
