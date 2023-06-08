@@ -102,6 +102,7 @@ body{
 }
 }
 main{
+    
     .container-3{
         margin-top: 30px;
         @include hero-flex;
@@ -151,7 +152,7 @@ main{
         color: white;
         font-size: 30px;
         position: absolute;
-        top: 570px;
+        top: 565px;
         
 
     }
@@ -163,6 +164,7 @@ main{
 
 section{
     .container-5{
+       
         @include boxes;
         gap: 30px;
         margin-top: 40px;
