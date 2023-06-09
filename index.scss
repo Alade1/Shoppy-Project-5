@@ -169,6 +169,7 @@ section{
         gap: 30px;
         margin-top: 40px;
     .box-1{
+        position: relative;
         background: #FDFFFE;
         box-shadow: 0px 34.867px 46.4894px rgba(212, 217, 232, 0.2);
         border-radius: 18.5958px;
@@ -178,32 +179,32 @@ section{
         position: absolute;
         width: 83.03px;
         height: 62.76px;
-        left: 50px;
-        top: 750px;
+        left: 20px;
+        bottom: 1rem;
 
     }
      .box-image-3{
         position: absolute;
         width: 83.03px;
         height: 62.76px;
-        left: 408px;
-        top: 760px;
+        left:20px;
+        bottom: 1rem;
    
      }
      .box-image-4{
         position: absolute;
         width: 83.03px;
         height: 62.76px;
-        left: 590px;
-        top: 760px;
+        left: 20px;
+        bottom: 1rem;
 
      }
      .box-image-5{
         position: absolute;
         width: 83.03px;
         height: 62.76px;
-        left: 760px;
-        top: 760px;
+        left: 20px;
+        bottom:1rem;
 
      }
         
@@ -228,6 +229,7 @@ section{
     .container-7{
         @include images;
       .images-stores-1{
+        position: relative;
        .subject{
         font-family: 'Poppins';
         font-style: normal;
@@ -235,8 +237,8 @@ section{
         font-size: 28px;
         line-height: 50px;
         position:absolute;
-        top: 1250px;
-        left: 70px;
+        bottom:1.3rem;
+        left: 1rem;
         color: white;
     
         
@@ -245,15 +247,16 @@ section{
        
       }
       .images-stores-2{
-        .subject{
+        position: relative;
+     .subject{
             font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
         font-size: 28px;
         line-height: 50px;
         position:absolute;
-        top: 1250px;
-        left: 420px;
+        left:1rem;
+        bottom: 1.3rem;
         color: white;
 
         }
@@ -264,6 +267,7 @@ section{
         @include images;
 
     .images-stores-3{
+        position:relative;
         .subject{
             font-family: 'Poppins';
         font-style: normal;
@@ -271,8 +275,8 @@ section{
         font-size: 28px;
         line-height: 50px;
         position:absolute;
-        top: 1590px;
-        left: 70px;
+        left: 1rem;
+        bottom: 1.3rem;
         color: white;
 
         }
@@ -281,6 +285,7 @@ section{
 
     }
     .images-stores-4{
+        position: relative;
         .subject{
             font-family: 'Poppins';
             font-style: normal;
@@ -288,8 +293,8 @@ section{
             font-size: 28px;
             line-height: 50px;
             position:absolute;
-            top: 1590px;
-            left: 720px;
+         left: 1rem;
+         bottom: 1.3rem;
             color: white;
 
         }
@@ -310,17 +315,12 @@ section{
         gap:30px;
 
     .container-10{
-
-        p{
-            width: 253.34px;
-            height: 96px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 40px;
-
+        position: relative;
+        span{
+            font-size: 25px;
+            font-weight: bolder;
         }
+        
         .easy{
             width: 193.96px;
             height: 81px;
@@ -336,17 +336,17 @@ section{
             border-radius: 7.9168px;
             margin-top: 25px;
             border: none;
-            padding: 18px;
+            padding: 25px;
             font-size: 17px;
            
 
         i{
             position: absolute;
-            left: 160px;
-            padding-top: 5px;
-            padding-left: 2px;
-            
-            font-weight: bold;
+           bottom: 1.7rem;
+           padding-left: 4px;
+           font-size: 18px;
+           font-weight: bold;
+           
             
             
         }
@@ -356,6 +356,7 @@ section{
 
     }
     .container-11{
+        
         p{
             font-style: normal;
             font-weight: 500;
@@ -368,11 +369,11 @@ section{
         .amount-off{
             color: green;
         }
-        i{
-           font-size: 30px; 
+        i{ 
            position:absolute;
            top: 1800px;
-           left:268px;
+           font-size: 30px;
+           left:  315px;
            
          
 
@@ -409,7 +410,7 @@ section{
             position: absolute;
             top: 1790px;
             font-size: 30px;
-            right: 40px;
+            right: 45px;
           
         }
 
@@ -482,11 +483,12 @@ section{
     .container-17{
         display: flex;
         justify-content: flex-start;
-        gap: 40px;
+        gap: 60px;
 
     .container-18{
         background-color: black;
         height: 550px;
+        position: relative;
         .ps-5{
             width: 162px;
 height: 24px;
@@ -496,7 +498,8 @@ font-weight: 600;
 font-size: 20px;
 
 position: absolute;
-top: 2670px;
+left: 0px;
+bottom: 8rem;
 color:white;
 padding-left:10px;
           
@@ -510,7 +513,8 @@ padding-left:10px;
           font-size: 14px;
         line-height: 21px;
          position: absolute;
-            top: 2700px;
+            left:0px;
+            bottom: 4rem;
             color: white;
             padding-left: 8px;
         }
@@ -521,7 +525,8 @@ padding-left:10px;
             font-size: 16px;
             line-height: 24px;
             position: absolute;
-            top: 2745px;
+            left: 0px;
+            bottom: 2rem;
             color: white;
             text-decoration: underline;
             padding-left: 8px;
@@ -530,6 +535,7 @@ padding-left:10px;
 
     .container-19{
         .container-20{
+            position: relative;
             .women{
                 font-family: 'Inter';
                 font-style: normal;
@@ -537,7 +543,8 @@ padding-left:10px;
                font-size: 15px;
                line-height: 24px;
                position: absolute;
-               top: 2400px;
+               left: 0px;
+               bottom: 6rem;
                color: white;
                padding-left: 8px;
 
@@ -551,7 +558,8 @@ padding-left:10px;
                 font-size: 10px;
                 line-height: 21px;
                 position: absolute;
-                top: 2430px;
+               left:0px;
+               bottom: 3rem;
                 color:white;
                 padding-left: 10px;
             }
@@ -562,7 +570,8 @@ padding-left:10px;
                 font-size: 10px;
                 line-height: 24px;
                 position: absolute;
-                top: 2475px;
+                left:0px;
+                bottom:1rem;
                 color: white;
                 text-decoration: underline;
                 padding-left: 8px;
@@ -580,6 +589,7 @@ padding-left:10px;
         background-color: #000;
         padding: 10px;
         height: 250px;
+        position: relative;
 
         .Speakers{
             font-family: 'Inter';
@@ -589,7 +599,8 @@ padding-left:10px;
             line-height: 24px;
             color:white;
             position: absolute;
-            top: 2730px;
+            bottom: 7rem;
+            left: 10px;
         }
         .speakers-intro{
             width: 191px;
@@ -600,8 +611,9 @@ padding-left:10px;
            font-size: 10px;
            line-height: 21px;
            color:white;
-           position:absolute;
-           top: 2755px;
+           position: absolute;
+           bottom: 5rem;
+           left: 10px;
         }
         .buy{
             font-family: 'Poppins';
@@ -612,8 +624,8 @@ padding-left:10px;
             color: white;
             text-decoration: underline;
             position: absolute;
-            top: 2770px;
-           
+            bottom: 3rem;
+            left: 10px;
         }
         
     
@@ -866,7 +878,8 @@ footer{
 
 }   
 
-} 
+ 
+}
 }
 
 

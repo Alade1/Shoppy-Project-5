@@ -167,6 +167,7 @@ a {
   margin-top: 40px;
 }
 * body section .container-5 .box-1 {
+  position: relative;
   background: #FDFFFE;
   box-shadow: 0px 34.867px 46.4894px rgba(212, 217, 232, 0.2);
   border-radius: 18.5958px;
@@ -177,29 +178,29 @@ a {
   position: absolute;
   width: 83.03px;
   height: 62.76px;
-  left: 50px;
-  top: 750px;
+  left: 20px;
+  bottom: 1rem;
 }
 * body section .container-5 .box-1 .box-image-3 {
   position: absolute;
   width: 83.03px;
   height: 62.76px;
-  left: 408px;
-  top: 760px;
+  left: 20px;
+  bottom: 1rem;
 }
 * body section .container-5 .box-1 .box-image-4 {
   position: absolute;
   width: 83.03px;
   height: 62.76px;
-  left: 590px;
-  top: 760px;
+  left: 20px;
+  bottom: 1rem;
 }
 * body section .container-5 .box-1 .box-image-5 {
   position: absolute;
   width: 83.03px;
   height: 62.76px;
-  left: 760px;
-  top: 760px;
+  left: 20px;
+  bottom: 1rem;
 }
 * body section h1 {
   padding-left: 2rem;
@@ -216,8 +217,10 @@ a {
 * body section .container-6 .container-7 {
   display: flex;
   align-items: center;
-  flex-direction: start;
-  gap: 30px;
+  gap: 20px;
+}
+* body section .container-6 .container-7 .images-stores-1 {
+  position: relative;
 }
 * body section .container-6 .container-7 .images-stores-1 .subject {
   font-family: "Poppins";
@@ -226,9 +229,12 @@ a {
   font-size: 28px;
   line-height: 50px;
   position: absolute;
-  top: 1250px;
-  left: 70px;
+  bottom: 1.3rem;
+  left: 1rem;
   color: white;
+}
+* body section .container-6 .container-7 .images-stores-2 {
+  position: relative;
 }
 * body section .container-6 .container-7 .images-stores-2 .subject {
   font-family: "Poppins";
@@ -237,15 +243,17 @@ a {
   font-size: 28px;
   line-height: 50px;
   position: absolute;
-  top: 1250px;
-  left: 420px;
+  left: 1rem;
+  bottom: 1.3rem;
   color: white;
 }
 * body section .container-6 .container-8 {
   display: flex;
   align-items: center;
-  flex-direction: start;
-  gap: 30px;
+  gap: 20px;
+}
+* body section .container-6 .container-8 .images-stores-3 {
+  position: relative;
 }
 * body section .container-6 .container-8 .images-stores-3 .subject {
   font-family: "Poppins";
@@ -254,9 +262,12 @@ a {
   font-size: 28px;
   line-height: 50px;
   position: absolute;
-  top: 1590px;
-  left: 70px;
+  left: 1rem;
+  bottom: 1.3rem;
   color: white;
+}
+* body section .container-6 .container-8 .images-stores-4 {
+  position: relative;
 }
 * body section .container-6 .container-8 .images-stores-4 .subject {
   font-family: "Poppins";
@@ -265,8 +276,8 @@ a {
   font-size: 28px;
   line-height: 50px;
   position: absolute;
-  top: 1590px;
-  left: 720px;
+  left: 1rem;
+  bottom: 1.3rem;
   color: white;
 }
 * body section .container-9 {
@@ -278,14 +289,12 @@ a {
   flex-direction: start;
   gap: 30px;
 }
-* body section .container-9 .container-10 p {
-  width: 253.34px;
-  height: 96px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 40px;
+* body section .container-9 .container-10 {
+  position: relative;
+}
+* body section .container-9 .container-10 span {
+  font-size: 25px;
+  font-weight: bolder;
 }
 * body section .container-9 .container-10 .easy {
   width: 193.96px;
@@ -301,14 +310,14 @@ a {
   border-radius: 7.9168px;
   margin-top: 25px;
   border: none;
-  padding: 18px;
+  padding: 25px;
   font-size: 17px;
 }
 * body section .container-9 .container-10 button i {
   position: absolute;
-  left: 160px;
-  padding-top: 5px;
-  padding-left: 2px;
+  bottom: 1.7rem;
+  padding-left: 4px;
+  font-size: 18px;
   font-weight: bold;
 }
 * body section .container-9 .container-11 p {
@@ -324,10 +333,10 @@ a {
   color: green;
 }
 * body section .container-9 .container-11 i {
-  font-size: 30px;
   position: absolute;
   top: 1800px;
-  left: 268px;
+  font-size: 30px;
+  left: 315px;
 }
 * body section .container-9 .container-12 p {
   font-style: normal;
@@ -357,7 +366,7 @@ a {
   position: absolute;
   top: 1790px;
   font-size: 30px;
-  right: 40px;
+  right: 45px;
 }
 * body section .container-14 {
   margin-top: 40px;
@@ -415,11 +424,12 @@ a {
 * body section .container-17 {
   display: flex;
   justify-content: flex-start;
-  gap: 40px;
+  gap: 60px;
 }
 * body section .container-17 .container-18 {
   background-color: black;
   height: 550px;
+  position: relative;
 }
 * body section .container-17 .container-18 .ps-5 {
   width: 162px;
@@ -429,7 +439,8 @@ a {
   font-weight: 600;
   font-size: 20px;
   position: absolute;
-  top: 2670px;
+  left: 0px;
+  bottom: 8rem;
   color: white;
   padding-left: 10px;
 }
@@ -440,7 +451,8 @@ a {
   font-size: 14px;
   line-height: 21px;
   position: absolute;
-  top: 2700px;
+  left: 0px;
+  bottom: 4rem;
   color: white;
   padding-left: 8px;
 }
@@ -451,10 +463,14 @@ a {
   font-size: 16px;
   line-height: 24px;
   position: absolute;
-  top: 2745px;
+  left: 0px;
+  bottom: 2rem;
   color: white;
   text-decoration: underline;
   padding-left: 8px;
+}
+* body section .container-17 .container-19 .container-20 {
+  position: relative;
 }
 * body section .container-17 .container-19 .container-20 .women {
   font-family: "Inter";
@@ -463,7 +479,8 @@ a {
   font-size: 15px;
   line-height: 24px;
   position: absolute;
-  top: 2400px;
+  left: 0px;
+  bottom: 6rem;
   color: white;
   padding-left: 8px;
 }
@@ -476,7 +493,8 @@ a {
   font-size: 10px;
   line-height: 21px;
   position: absolute;
-  top: 2430px;
+  left: 0px;
+  bottom: 3rem;
   color: white;
   padding-left: 10px;
 }
@@ -487,7 +505,8 @@ a {
   font-size: 10px;
   line-height: 24px;
   position: absolute;
-  top: 2475px;
+  left: 0px;
+  bottom: 1rem;
   color: white;
   text-decoration: underline;
   padding-left: 8px;
@@ -502,6 +521,7 @@ a {
   background-color: #000;
   padding: 10px;
   height: 250px;
+  position: relative;
 }
 * body section .container-17 .container-21 .container-22 .Speakers {
   font-family: "Inter";
@@ -511,7 +531,8 @@ a {
   line-height: 24px;
   color: white;
   position: absolute;
-  top: 2730px;
+  bottom: 7rem;
+  left: 10px;
 }
 * body section .container-17 .container-21 .container-22 .speakers-intro {
   width: 191px;
@@ -523,7 +544,8 @@ a {
   line-height: 21px;
   color: white;
   position: absolute;
-  top: 2755px;
+  bottom: 5rem;
+  left: 10px;
 }
 * body section .container-17 .container-21 .container-22 .buy {
   font-family: "Poppins";
@@ -534,7 +556,8 @@ a {
   color: white;
   text-decoration: underline;
   position: absolute;
-  top: 2770px;
+  bottom: 3rem;
+  left: 10px;
 }
 * body section .container-17 .container-21 .container-23 {
   background-color: #000;

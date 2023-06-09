@@ -26,7 +26,6 @@
 }
 @mixin images{
     display: flex;
-        align-items: center;
-        flex-direction: start;
-        gap: 30px;
+    align-items: center;
+    gap: 20px;
 }
