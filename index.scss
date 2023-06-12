@@ -16,6 +16,7 @@ body{
             padding: 5px;
             text-align: center;
             font-size: 14px;
+            overflow-y: hidden;
         .fixed-2{
             text-decoration: underline;
         }
@@ -312,7 +313,8 @@ section{
         display: flex;
         align-items: center;
         flex-direction: start;
-        gap:100px;
+        gap: 30px;
+      
 
     .container-10{
         position: relative;
@@ -482,8 +484,7 @@ section{
     margin-top: 40px;
     .container-17{
         display: flex;
-        justify-content: flex-start;
-        gap: 100px;
+        justify-content: space-between;
 
     .container-18{
         background-color: black;
