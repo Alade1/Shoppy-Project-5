@@ -6,6 +6,15 @@
 body{
     header{
         .fixed{
+
+            @media (max-width: $small){
+                width: 100%;
+                padding: none;
+                font-size: 10px;
+                height: 20px;
+                text-align: center;
+
+            }
             position: absolute;
             width: 100%;
             height: 30px;
@@ -18,6 +27,9 @@ body{
             font-size: 14px;
             overflow-y: hidden;
         .fixed-2{
+            @media (max-width: $small){
+                font-size: 10px;
+            }
             text-decoration: underline;
         }
         }
@@ -27,6 +39,13 @@ body{
             padding-right:2rem;
             margin-top: 40px;
             @include foflex;
+            @media (max-width: $small){
+                padding-left:10px;
+              
+
+            }
+
+            
            
         .logo{
             font-family: 'Quella', sans-serif;
@@ -35,6 +54,14 @@ body{
             font-size: 28px;
             line-height: 46px;
             color: #1E1E1E;
+
+            @media (max-width: $small){
+                font-family: 'Quella', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+              
+
+            }
                                                 
         }
         .input-nav{
@@ -45,7 +72,11 @@ body{
            border-radius: 5px;
            border:none;
            padding-left: 10px;
+           @media (max-width: $small){
+            display:none;
+          
 
+        }
 
         }
         .search-button i{
@@ -74,6 +105,11 @@ body{
         padding-right: 2rem;
         margin-top:40px;
         @include navflex;
+        @media (max-width: $small){
+            padding-left:10px;
+          
+
+        }
     .logo-2{
         font-family: 'Inter', sans-serif;
         font-style: normal;
@@ -82,8 +118,30 @@ body{
         line-height: 24px;
         overflow-y: hidden;
 
+        @media (max-width: $small){
+            font-size: 18px;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+           font-weight: 700;
+
+
+        }
+
     }
-    .nav-page-1 ul{
+    .nav-page-1{ 
+        .icona{
+            display: none;
+            @media (max-width: $small){
+                display:block;
+          
+        }
+    }
+      
+        
+        .dropdown-menu{
+        @media (max-width: $small){
+            display:none;
+        }
         @include navflex-1;
         list-style: none;
         gap: 25px;
@@ -92,10 +150,16 @@ body{
         color:#000;
     }
     
-    }
+    }}
     .nav-page-2{
         display: flex;
         gap:20px;
+
+        @media (max-width: $small){
+            display:none;
+
+
+        }
     }
 
 
@@ -113,15 +177,36 @@ main{
         background-color: #000;
         height:100%;
         padding:50px;
+
+        @media (max-width: $small){
+          margin:0;
+          display:flex;
+          flex-direction: column;
+          gap: 30px;
+          padding:10px;
+
+
+        }
        
 
     .container-4{
         padding-left:2rem;
+        @media (max-width: $small){
+          padding-left:20px;
+
+
+        }
 
     .ios-image i{
         font-size: 100px;
         width: 100px;
         color:white;
+        @media (max-width: $small){
+            font-size: 70px;
+            width:100px;
+
+
+        }
 
     }
     .ios{
@@ -129,6 +214,15 @@ main{
         position: relative;
         bottom: 40px;
         color:white;   
+        @media (max-width: $small){
+            font-size: 30px;
+        position: relative;
+        bottom: 20px;
+        color:white;
+         
+
+
+        }
     }
     p{
         font-family: 'Inter';
@@ -138,6 +232,13 @@ main{
         line-height: 83px;
         color: white;
         padding-top: 30px;
+        
+        @media (max-width: $small){
+          font-size: 40px;
+          line-height: 70px;
+
+
+        }
     }
     .shop{
         font-family: 'Poppins';
@@ -148,12 +249,26 @@ main{
         color: white;
         padding-top: 30px;
 
+        @media (max-width: $small){
+           font-size: 25px;
+           
+
+
+        }
+
     }
     .icon i{
         color: white;
         font-size: 30px;
         position: absolute;
         top: 565px;
+
+        @media (max-width: $small){
+         position: absolute;
+         top: 440px;
+
+
+        }
         
 
     }
@@ -169,6 +284,16 @@ section{
         @include boxes;
         gap: 30px;
         margin-top: 40px;
+
+        @media (max-width: $small){
+            display:flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 10px;
+            padding:0;
+
+
+        }
     .box-1{
         position: relative;
         background: #FDFFFE;
@@ -176,12 +301,35 @@ section{
         border-radius: 18.5958px;
         width: 130.58px;
         height: 111.57px;
+        @media (max-width: $small){
+            width: 300px;
+
+
+        }
     .box-image-1{
         position: absolute;
         width: 83.03px;
         height: 62.76px;
         left: 20px;
         bottom: 1rem;
+
+        @media (max-width: $small){
+            position: absolute;
+            width: 130px;
+            left: 80px;
+
+
+        }
+
+    }
+    .box-image-2{
+        @media (max-width: $small){
+            position: absolute;
+            width: 130px;
+            left: 80px;
+
+
+        }
 
     }
      .box-image-3{
@@ -190,6 +338,14 @@ section{
         height: 62.76px;
         left:20px;
         bottom: 1rem;
+
+        @media (max-width: $small){
+            position: absolute;
+            width: 130px;
+            left: 80px;
+
+
+        }
    
      }
      .box-image-4{
@@ -199,6 +355,14 @@ section{
         left: 20px;
         bottom: 1rem;
 
+        @media (max-width: $small){
+            position: absolute;
+            width: 130px;
+            left: 80px;
+
+
+        }
+
      }
      .box-image-5{
         position: absolute;
@@ -206,6 +370,14 @@ section{
         height: 62.76px;
         left: 20px;
         bottom:1rem;
+
+        @media (max-width: $small){
+            position: absolute;
+            width: 130px;
+            left: 80px;
+
+
+        }
 
      }
         
@@ -223,12 +395,33 @@ section{
        font-weight: 700;
        font-size: 50px;
        line-height: 96px;
+
+       @media (max-width: $small){
+        font-size: 30px;
+        padding-left: 10px;
+
+
+    }
     }
     .container-6{
         margin-left: 2rem;
         margin-right: 2rem;
+
+        @media (max-width: $small){
+           margin-left: 10px;
+           margin-right: 10px;
+
+        }
     .container-7{
         @include images;
+
+        @media (max-width: $small){
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+
+
+        }
       .images-stores-1{
         position: relative;
        .subject{
@@ -241,6 +434,11 @@ section{
         bottom:1.3rem;
         left: 1rem;
         color: white;
+        @media (max-width: $small){
+            font-size: 20px;
+
+
+        }
     
         
        }
@@ -259,6 +457,11 @@ section{
         left:1rem;
         bottom: 1.3rem;
         color: white;
+        @media (max-width: $small){
+            font-size: 20px;
+
+
+        }
 
         }
 
@@ -266,6 +469,14 @@ section{
     }
       .container-8 {
         @include images;
+
+        @media (max-width: $small){
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+
+
+        }
 
     .images-stores-3{
         position:relative;
@@ -279,6 +490,12 @@ section{
         left: 1rem;
         bottom: 1.3rem;
         color: white;
+
+        @media (max-width: $small){
+            font-size: 20px;
+
+
+        }
 
         }
    
@@ -298,7 +515,14 @@ section{
          bottom: 1.3rem;
             color: white;
 
+            @media (max-width: $small){
+                font-size: 20px;
+    
+    
+            }
+
         }
+
     }
 
       }
@@ -306,6 +530,12 @@ section{
 }
 
 section{
+    @media (max-width: $small){
+        margin-left: 10px;
+        margin-right: 10px;
+
+
+    }
     .container-9{
         margin-top: 40px;
         margin-left: 2rem;
@@ -314,6 +544,16 @@ section{
         align-items: center;
         flex-direction: start;
         gap: 30px;
+
+        @media (max-width: $small){
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+           margin-left: 10px;
+           margin-right: 10px;
+
+
+        }
       
 
     .container-10{
@@ -348,6 +588,11 @@ section{
            padding-left: 4px;
            font-size: 18px;
            font-weight: bold;
+
+           @media (max-width: $small){
+           display: none;
+
+        }
            
             
             
@@ -449,6 +694,12 @@ section{
         font-weight: 600;
         font-size: 22px;
         line-height: 34px;
+
+        @media (max-width: $small){
+            font-size: 15px;
+
+
+        }
     }
     .dummy{
         font-family: 'Inter';
@@ -482,9 +733,30 @@ section{
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 40px;
+    @media (max-width: $small){
+        margin-left: 10px;
+        margin-right: 10px;
+
+
+    }
+
+    @media (max-width: $small){
+        margin-left: 10px;
+        margin-right: 10px;
+
+
+    }
     .container-17{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 120px;
+
+        @media (max-width: $small){
+            display: flex;
+            flex-direction: column;
+
+
+        }
 
     .container-18{
         background-color: black;
@@ -647,6 +919,13 @@ section{
         align-items: center;
         justify-content: flex-start;
         gap: 20px;
+
+        @media (max-width: $small){
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+        }
     .container-26{
       .container-27{
         margin-top: 20px;
@@ -757,17 +1036,35 @@ footer{
     width: 100%;
     margin-right: 2rem;
     background-color: #000;
+
+    @media (max-width: $small){
+        margin: 0px;
+
+
+    }
    
 .container-34{
     display: flex;
     justify-content: flex-start;
     gap: 480px;
     border-bottom: 1px solid  #F5F5F5;
+
+    @media (max-width: $small){
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+
+
+    }
 .container-35{
     padding-top:30px;
     padding-left:30px;
     padding-bottom: 30px;
-   
+    @media (max-width: $small){
+       padding-left: 10px;
+
+
+    }
     
 }
 .container-36{
@@ -778,6 +1075,12 @@ footer{
 }
 .container-37{
     padding-top: 25px;
+    @media (max-width: $small){
+        padding-left: 10px;
+        padding-top: 10px;
+
+
+    }
     .container-38{
         p{
             color: white;
@@ -797,6 +1100,15 @@ footer{
     justify-content: flex-start;
    gap: 15px;
    border-bottom: 2px solid white;
+
+   @media (max-width: $small){
+ margin-left: 10px;
+ margin-right : 10px;
+ display: flex;
+ flex-direction: column;
+
+
+}
 
    
 
@@ -882,5 +1194,6 @@ footer{
  
 }
 }
+
 
 

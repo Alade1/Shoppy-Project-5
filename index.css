@@ -35,8 +35,22 @@ a {
   font-size: 14px;
   overflow-y: hidden;
 }
+@media (max-width: 600px) {
+  * body header .fixed {
+    width: 100%;
+    padding: none;
+    font-size: 10px;
+    height: 20px;
+    text-align: center;
+  }
+}
 * body header .fixed .fixed-2 {
   text-decoration: underline;
+}
+@media (max-width: 600px) {
+  * body header .fixed .fixed-2 {
+    font-size: 10px;
+  }
 }
 * body header nav .container {
   padding-left: 2rem;
@@ -46,6 +60,11 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 600px) {
+  * body header nav .container {
+    padding-left: 10px;
+  }
+}
 * body header nav .container .logo {
   font-family: "Quella", sans-serif;
   font-style: normal;
@@ -53,6 +72,13 @@ a {
   font-size: 28px;
   line-height: 46px;
   color: #1E1E1E;
+}
+@media (max-width: 600px) {
+  * body header nav .container .logo {
+    font-family: "Quella", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
 }
 * body header nav .container .input-nav {
   width: 500px;
@@ -62,6 +88,11 @@ a {
   border-radius: 5px;
   border: none;
   padding-left: 10px;
+}
+@media (max-width: 600px) {
+  * body header nav .container .input-nav {
+    display: none;
+  }
 }
 * body header nav .container .search-button i {
   position: relative;
@@ -87,6 +118,11 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 600px) {
+  * body header nav .container-2 {
+    padding-left: 10px;
+  }
+}
 * body header nav .container-2 .logo-2 {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -95,20 +131,46 @@ a {
   line-height: 24px;
   overflow-y: hidden;
 }
-* body header nav .container-2 .nav-page-1 ul {
+@media (max-width: 600px) {
+  * body header nav .container-2 .logo-2 {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+}
+* body header nav .container-2 .nav-page-1 .icona {
+  display: none;
+}
+@media (max-width: 600px) {
+  * body header nav .container-2 .nav-page-1 .icona {
+    display: block;
+  }
+}
+* body header nav .container-2 .nav-page-1 .dropdown-menu {
   display: flex;
   align-items: center;
   justify-content: space-around;
   list-style: none;
   gap: 25px;
 }
-* body header nav .container-2 .nav-page-1 ul li a {
+@media (max-width: 600px) {
+  * body header nav .container-2 .nav-page-1 .dropdown-menu {
+    display: none;
+  }
+}
+* body header nav .container-2 .nav-page-1 .dropdown-menu li a {
   text-decoration: none;
   color: #000;
 }
 * body header nav .container-2 .nav-page-2 {
   display: flex;
   gap: 20px;
+}
+@media (max-width: 600px) {
+  * body header nav .container-2 .nav-page-2 {
+    display: none;
+  }
 }
 * body main .container-3 {
   margin-top: 30px;
@@ -122,19 +184,47 @@ a {
   height: 100%;
   padding: 50px;
 }
+@media (max-width: 600px) {
+  * body main .container-3 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+  }
+}
 * body main .container-3 .container-4 {
   padding-left: 2rem;
+}
+@media (max-width: 600px) {
+  * body main .container-3 .container-4 {
+    padding-left: 20px;
+  }
 }
 * body main .container-3 .container-4 .ios-image i {
   font-size: 100px;
   width: 100px;
   color: white;
 }
+@media (max-width: 600px) {
+  * body main .container-3 .container-4 .ios-image i {
+    font-size: 70px;
+    width: 100px;
+  }
+}
 * body main .container-3 .container-4 .ios {
   font-size: 20px;
   position: relative;
   bottom: 40px;
   color: white;
+}
+@media (max-width: 600px) {
+  * body main .container-3 .container-4 .ios {
+    font-size: 30px;
+    position: relative;
+    bottom: 20px;
+    color: white;
+  }
 }
 * body main .container-3 .container-4 p {
   font-family: "Inter";
@@ -145,6 +235,12 @@ a {
   color: white;
   padding-top: 30px;
 }
+@media (max-width: 600px) {
+  * body main .container-3 .container-4 p {
+    font-size: 40px;
+    line-height: 70px;
+  }
+}
 * body main .container-3 .container-4 .shop {
   font-family: "Poppins";
   font-style: normal;
@@ -154,11 +250,22 @@ a {
   color: white;
   padding-top: 30px;
 }
+@media (max-width: 600px) {
+  * body main .container-3 .container-4 .shop {
+    font-size: 25px;
+  }
+}
 * body main .container-3 .container-4 .icon i {
   color: white;
   font-size: 30px;
   position: absolute;
   top: 565px;
+}
+@media (max-width: 600px) {
+  * body main .container-3 .container-4 .icon i {
+    position: absolute;
+    top: 440px;
+  }
 }
 * body section .container-5 {
   display: flex;
@@ -166,6 +273,15 @@ a {
   justify-content: space-between;
   gap: 30px;
   margin-top: 40px;
+}
+@media (max-width: 600px) {
+  * body section .container-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    padding: 0;
+  }
 }
 * body section .container-5 .box-1 {
   position: relative;
@@ -175,12 +291,31 @@ a {
   width: 130.58px;
   height: 111.57px;
 }
+@media (max-width: 600px) {
+  * body section .container-5 .box-1 {
+    width: 300px;
+  }
+}
 * body section .container-5 .box-1 .box-image-1 {
   position: absolute;
   width: 83.03px;
   height: 62.76px;
   left: 20px;
   bottom: 1rem;
+}
+@media (max-width: 600px) {
+  * body section .container-5 .box-1 .box-image-1 {
+    position: absolute;
+    width: 130px;
+    left: 80px;
+  }
+}
+@media (max-width: 600px) {
+  * body section .container-5 .box-1 .box-image-2 {
+    position: absolute;
+    width: 130px;
+    left: 80px;
+  }
 }
 * body section .container-5 .box-1 .box-image-3 {
   position: absolute;
@@ -189,6 +324,13 @@ a {
   left: 20px;
   bottom: 1rem;
 }
+@media (max-width: 600px) {
+  * body section .container-5 .box-1 .box-image-3 {
+    position: absolute;
+    width: 130px;
+    left: 80px;
+  }
+}
 * body section .container-5 .box-1 .box-image-4 {
   position: absolute;
   width: 83.03px;
@@ -196,12 +338,26 @@ a {
   left: 20px;
   bottom: 1rem;
 }
+@media (max-width: 600px) {
+  * body section .container-5 .box-1 .box-image-4 {
+    position: absolute;
+    width: 130px;
+    left: 80px;
+  }
+}
 * body section .container-5 .box-1 .box-image-5 {
   position: absolute;
   width: 83.03px;
   height: 62.76px;
   left: 20px;
   bottom: 1rem;
+}
+@media (max-width: 600px) {
+  * body section .container-5 .box-1 .box-image-5 {
+    position: absolute;
+    width: 130px;
+    left: 80px;
+  }
 }
 * body section h1 {
   padding-left: 2rem;
@@ -211,14 +367,33 @@ a {
   font-size: 50px;
   line-height: 96px;
 }
+@media (max-width: 600px) {
+  * body section h1 {
+    font-size: 30px;
+    padding-left: 10px;
+  }
+}
 * body section .container-6 {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+@media (max-width: 600px) {
+  * body section .container-6 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 * body section .container-6 .container-7 {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 600px) {
+  * body section .container-6 .container-7 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 * body section .container-6 .container-7 .images-stores-1 {
   position: relative;
@@ -234,6 +409,11 @@ a {
   left: 1rem;
   color: white;
 }
+@media (max-width: 600px) {
+  * body section .container-6 .container-7 .images-stores-1 .subject {
+    font-size: 20px;
+  }
+}
 * body section .container-6 .container-7 .images-stores-2 {
   position: relative;
 }
@@ -248,10 +428,22 @@ a {
   bottom: 1.3rem;
   color: white;
 }
+@media (max-width: 600px) {
+  * body section .container-6 .container-7 .images-stores-2 .subject {
+    font-size: 20px;
+  }
+}
 * body section .container-6 .container-8 {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 600px) {
+  * body section .container-6 .container-8 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 * body section .container-6 .container-8 .images-stores-3 {
   position: relative;
@@ -267,6 +459,11 @@ a {
   bottom: 1.3rem;
   color: white;
 }
+@media (max-width: 600px) {
+  * body section .container-6 .container-8 .images-stores-3 .subject {
+    font-size: 20px;
+  }
+}
 * body section .container-6 .container-8 .images-stores-4 {
   position: relative;
 }
@@ -281,6 +478,17 @@ a {
   bottom: 1.3rem;
   color: white;
 }
+@media (max-width: 600px) {
+  * body section .container-6 .container-8 .images-stores-4 .subject {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  * body section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 * body section .container-9 {
   margin-top: 40px;
   margin-left: 2rem;
@@ -289,6 +497,15 @@ a {
   align-items: center;
   flex-direction: start;
   gap: 30px;
+}
+@media (max-width: 600px) {
+  * body section .container-9 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 * body section .container-9 .container-10 {
   position: relative;
@@ -320,6 +537,11 @@ a {
   padding-left: 4px;
   font-size: 18px;
   font-weight: bold;
+}
+@media (max-width: 600px) {
+  * body section .container-9 .container-10 button i {
+    display: none;
+  }
 }
 * body section .container-9 .container-11 p {
   font-style: normal;
@@ -394,6 +616,11 @@ a {
   font-size: 22px;
   line-height: 34px;
 }
+@media (max-width: 600px) {
+  * body section .container-15 .discount {
+    font-size: 15px;
+  }
+}
 * body section .container-15 .dummy {
   font-family: "Inter";
   font-style: normal;
@@ -422,9 +649,28 @@ a {
   margin-right: 2rem;
   margin-top: 40px;
 }
+@media (max-width: 600px) {
+  * body section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 600px) {
+  * body section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 * body section .container-17 {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 120px;
+}
+@media (max-width: 600px) {
+  * body section .container-17 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 * body section .container-17 .container-18 {
   background-color: black;
@@ -570,6 +816,13 @@ a {
   justify-content: flex-start;
   gap: 20px;
 }
+@media (max-width: 600px) {
+  * body section .container-24 .container-25 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 * body section .container-24 .container-25 .container-26 .container-27 {
   margin-top: 20px;
 }
@@ -648,22 +901,45 @@ a {
   margin-right: 2rem;
   background-color: #000;
 }
+@media (max-width: 600px) {
+  * body footer {
+    margin: 0px;
+  }
+}
 * body footer .container-34 {
   display: flex;
   justify-content: flex-start;
   gap: 480px;
   border-bottom: 1px solid #F5F5F5;
 }
+@media (max-width: 600px) {
+  * body footer .container-34 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 * body footer .container-34 .container-35 {
   padding-top: 30px;
   padding-left: 30px;
   padding-bottom: 30px;
+}
+@media (max-width: 600px) {
+  * body footer .container-34 .container-35 {
+    padding-left: 10px;
+  }
 }
 * body footer .container-34 .container-36 p {
   color: white;
 }
 * body footer .container-34 .container-37 {
   padding-top: 25px;
+}
+@media (max-width: 600px) {
+  * body footer .container-34 .container-37 {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
 }
 * body footer .container-34 .container-37 .container-38 p {
   color: white;
@@ -677,6 +953,14 @@ a {
   justify-content: flex-start;
   gap: 15px;
   border-bottom: 2px solid white;
+}
+@media (max-width: 600px) {
+  * body footer .container-39 {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 * body footer .container-39 .container-40 h3 {
   color: white;
